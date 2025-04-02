@@ -1,0 +1,28 @@
+{
+  "name": "onepay-mcp-server",
+  "version": "0.0.1",
+  "description": "A MCP server to consume onepay.la API",
+  "author": "https://github.com/yelloalejo",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "mcp-plausible-server": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && shx chmod +x dist/*.js",
+    "prepare": "npm run build",
+    "watch": "tsc --watch"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.7.0",
+    "@types/node": "^22"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "shx": "^0.3.4",
+    "typescript": "^5.8.2"
+  }
+}
