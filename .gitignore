@@ -16,7 +16,4 @@ temp/
 *.log
 .vscode/
 .idea/
-*.swp
-*.swo
-*.sublime-*
 *.DS_Store
