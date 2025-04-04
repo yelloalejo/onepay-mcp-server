@@ -6,17 +6,18 @@
   "license": "MIT",
   "type": "module",
   "bin": {
-    "mcp-plausible-server": "dist/index.js"
+    "mcp-onepay-server": "build/src/index.js"
   },
   "files": [
-    "dist"
+    "build"
   ],
   "scripts": {
-    "build": "tsc && shx chmod +x dist/*.js",
-  "start": "node dist/index.js"
+    "build": "tsc && shx chmod +x build/src/*.js",
+    "prepare": "npm run build",
+    "start": "node build/src/index.js"
   },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "1.7.0",
+    "@modelcontextprotocol/sdk": "^1.8.0",
     "@types/node": "^22"
   },
   "devDependencies": {
@@ -24,4 +25,5 @@
     "shx": "^0.3.4",
     "typescript": "^5.8.2"
   }
+  
 }
